@@ -1,0 +1,140 @@
+header {
+    text-align: center;
+}
+#todo-lists {
+    margin: 0 auto;
+    width: 80%;
+}
+body {
+    margin: 0;
+    color: #454444;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #454444;
+}
+/*********** HEADER ************/
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    font-size: 11px;
+    height: 40px;
+    width: 100%;
+    padding: 28px;
+    background-color: #eda233;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 10;
+}
+
+header a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    top: 95px;
+    position: relative;
+    color: white;
+    padding: 50px;
+    padding-left: 75px;
+    padding-bottom: 35px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*********** LISTS ************/
+#home_all_options {
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+    padding-top: 25px;
+    color: #454444;
+    position: relative;
+    top: 100px;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5be5ceba4cde7af1a9541f1e/1544819108625-SUPFT7AOB61J91YNQUWW/spring-arial-mall-1400x700.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 700px;
+    width: 100%;
+}
+
+.home_option {
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-right: 100px; 
+    margin-left: 100px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 35px;
+    display: inline-block;
+}
+
+.home_option:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+#buttons {
+    clear: left;
+    display: flex;
+    justify-content: right;
+}
+
+.button_option {
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 13px;
+    top: 300px;
+    margin-right: 70px;
+    margin-bottom: 100px;
+    /*margin: 25px 50px 100px 0px;*/
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.button_option:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+#appt_all_options {
+    color: white;
+}
+
+.schedule_appt_type {
+    top: 150px;
+}
+
+.appt_options { /* the two options of appointment type */
+    color: white;
+    top: 240px;
+    padding: 67px;
+}
+
+.type-title {
+    margin-left: 20px;
+}
+
+header a {
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.type a {
+    color: #454444;
+    text-decoration: none;
+}
+
+

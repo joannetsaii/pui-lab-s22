@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthConnect</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- javascript -->
+
+</head>
+
+<body>
+  <header>
+    <div class="topnav">
+      <a href="immunization.html">Immunizations</a>
+      <a href="medical_record.html">Medical Records</a>
+      <a href="appointment.html">Appointments</a>       
+      <a class="active" href="index.html">Home</a>  
+      
+      <div class="topnav-left">     
+        <a class="active" href="index.html">HealthConnect.</a>       
+      </div>
+    </div>
+  </header>
+
+  <div>
+    <h2>Schedule Appointment Type</h2>
+    <section class="appointment_options">
+      <input id="tartan_testing" type="radio" name="appointment_options" value="Tartan testing">
+      <label for="tartan_testing">Tartan Testing (Asymptomatic COVID-19 Testing)</label>
+      <br>
+      <br>
+      <input id="vaccination" type="radio" name="appointment_options" value="COVID-19 Vaccination">
+      <label for="vaccination">COVID-19 Vaccination</label>  
+    </section>
+
+    <div id="buttons">
+      <div class="button_option">
+        <a href="testing_appt.html">Continue</a>  <!-- has to change file name -->
+      </div>
+      <div class="button_option">
+          <a href="index.html">Back</a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>

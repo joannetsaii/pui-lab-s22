@@ -62,6 +62,18 @@ h2 {
     font-family: 'Open Sans', sans-serif;
 }
 
+h3 {
+    position: relative;
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    margin-right: 490px;
+    padding-bottom: 25px;
+    margin-bottom: 28px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 /* h4 {
     color: white;

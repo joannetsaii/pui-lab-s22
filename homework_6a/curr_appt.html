@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HealthConnect</title>
+  <meta charset="UTF-8">
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- javascript -->
+  <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body onload="onLoad()">
+    <header>
+      <div class="topnav">
+        <a href="immunization.html">Immunizations</a>
+        <a href="medical_record.html">Medical Records</a>
+        <a href="curr_appt.html">Appointments</a>       
+        <a class="active" href="index.html">Home</a>  
+        
+        <div class="topnav-left">     
+          <a class="active" href="index.html">HealthConnect.</a>       
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <img src="images/map.png" class="map_image" alt="campus-map">
+      <img src="images/barcode.png" class="barcode_image" alt="barcode">
+    </div>
+
+    <div>
+      <h3>Your Scheduled Appointment</h3>
+      <p>Please be sure to <strong>save the barcode</strong> on your mobile device before your appointment.</p>
+      <div>
+        <table class="confirm">
+          <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><strong>Type:</strong></th>
+              <td id="type_display"></td>
+            </tr>
+            <tr>
+              <th scope="row"><strong>Date:</strong></th>
+              <td id="date_display"></td>
+            </tr>
+            <tr>
+              <th scope="row"><strong>Time:</strong></th>
+              <td id="time_display"></td>
+            </tr>
+            <tr>
+              <th scope="row"><strong>Location:</strong></th>
+              <td>TCS Hall (Tartan Consultancy Service)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="buttons">
+      <div class="button_option">
+        <button type="button" id="cancel_button_2" onclick="CancelAlert(); location.href = 'index.html'; StoreResult();">Cancel Appointment</button>
+        <button type="button" id="back_button_3" onclick="location.href = 'index.html';">Back</button>
+      </div>
+    </div>
+
+</body>
+
+</html>

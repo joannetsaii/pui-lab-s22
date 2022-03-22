@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HealthConnect</title>
+  <meta charset="UTF-8">
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- javascript -->
+  <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+      <div class="topnav">
+        <a href="immunization.html">Immunizations</a>
+        <a href="medical_record.html">Medical Records</a>
+        <a href="curr_appt.html">Appointments</a>       
+        <a class="active" href="index.html">Home</a>  
+        
+        <div class="topnav-left">
+          <a class="active" href="index.html">HealthConnect.</a>       
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <h3>Schedule an Appointment</h3>
+      <p>Select from available timeslots. All vaccinations will be given at TCS Hall (Tartan Consultancy Service).</p>
+      <div class="date_dropdown">
+        <select id="date_dropdown" name="date_dropdown">
+            <option value="" selected="selected">--select day--</option>
+            <option value="mon">February 7th, Monday</option>
+            <option value="tue">February 8th, Tuesday</option>
+            <option value="wed">February 9th, Wednesday</option>
+            <option value="thu">February 10th, Thursday</option>
+            <option value="fri">February 11th, Friday</option>
+        </select>
+      </div>
+
+      <div class="time_dropdown">
+        <select id="time_dropdown">
+            <option value="" selected="selected">--select time--</option>
+            <option value="1">8:00AM - 8:05AM</option>
+            <option value="2">8:05AM - 8:10AM</option>
+            <option value="3">8:10AM - 8:15AM</option>
+            <option value="4">8:15AM - 8:20AM</option>
+            <option value="5">8:25AM - 8:30AM</option>
+            <option value="6">8:30AM - 8:35AM</option>
+            <option value="7">8:35AM - 8:40AM</option>
+            <option value="8">8:40AM - 8:45AM</option>
+            <option value="9">8:45AM - 8:50AM</option>
+            <option value="9">8:50AM - 8:55AM</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="buttons">
+        <button type="button" id="continue_button_2" onclick="GetSelectedText(); location.href='confirm_appt.html';">Continue</button>   
+        <button onclick="location.href = 'appointment.html';" id="back_button_2" class="float-right submit-button">Back</button>
+    </div>
+    
+</body>
+
+</html>

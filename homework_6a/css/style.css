@@ -1,0 +1,484 @@
+header {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #454444;
+}
+/*********** HEADER ************/
+
+.topnav {
+    background-color: #eda233;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: right;
+    color: #F6F5F5;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+  
+.topnav a:hover {
+    background-color: #F6F5F5;
+    color: #383737;
+}
+  
+.topnav a.active {
+    background-color: #eda233;
+    color: #F6F5F5;
+}
+
+.topnav-left a {
+    float: left;
+    color: #F6F5F5;
+    text-align: center;
+    padding-left: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+h2 {
+    position: relative;
+    font-size: 25px;
+    color: white;
+    padding: 50px;
+    padding-left: 75px;
+    padding-bottom: 0px;
+    margin-bottom: 28px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#lab_result_title h2 {
+    position: relative;
+    font-size: 25px;
+    color: white;
+    padding: 50px;
+    padding-left: 75px;
+    padding-bottom: 0px;
+    margin-bottom: 28px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    position: relative;
+    font-size: 26px;
+    color: white;
+    padding: 20px 20px 0px 20px;
+    margin: 70px 490px 0px 50px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p { /* instructions */
+    position: relative;
+    font-size: 15px;
+    color: white;
+    padding: 20px;
+    margin: 0px 490px 28px 50px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.appt_options { /* the two options of appointment type */
+    position: relative;
+    color: white;
+    text-align: left;
+    padding: 40px 20px 30px 16px;
+    margin: 0px 490px 28px 50px;
+    font-size: 16px;
+}
+
+.image_column {
+    display: flex;
+    flex-direction: row;
+  }
+  
+.image_1 {
+    flex-basis: 33%;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=962&q=80') top no-repeat;
+    background-size: cover;
+    height: 13cm;
+    width: 25%;
+    margin: 40px;
+    margin-left: 70px;
+    border-radius: 35px;
+    border: 2px solid #F6F5F5;
+}
+
+.image_2 {
+    flex-basis: 33%;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1518976024611-28bf4b48222e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80') top no-repeat;
+    background-size: cover;
+    height: 13cm;
+    width: 25%;
+    margin: 40px;
+    border-radius: 35px;
+    border: 2px solid #F6F5F5;
+}
+
+.image_3 {
+    flex-basis: 33%;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1507831228884-93d43e81a99d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80') top no-repeat;
+    /* linear-gradient */
+    background-size: cover;
+    height: 13cm;
+    width: 25%;
+    margin: 40px;
+    margin-right: 70px;
+    border-radius: 35px;
+    border: 2px solid #F6F5F5;
+}
+
+    
+.home_option {
+    text-align: center;
+    font-size: 14px;
+    width: 55%;
+    padding: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 410px;
+    background-color: #F6F5F5;
+    border: 2px solid #cecece;
+    border-radius: 35px;
+    display: inline-block;
+}
+
+.home_option:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+/*********** SELECT APPOINTMENT TYPE (appointment.html)************/
+
+#buttons {
+    clear: left;
+    display: flex;
+    justify-content: right;
+}
+
+#continue_button_1 {
+    margin: 310px 70px 50px auto;
+    /* margin-right: 70px;
+    margin-bottom: 50px; */
+    padding: 10px 15px 10px 15px;
+    /*margin: 370px 70px 50px auto;*/
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    display: inline-block;
+    /* position: relative; */
+    font-family: 'Open Sans', sans-serif;
+    color:#454444;
+    font-size: 14px;
+}
+
+#back_button_1 {
+    margin: 310px 70px 50px auto;
+    padding: 10px 15px 10px 15px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color:#454444;
+    font-size: 14px;
+}
+
+#continue_button_1:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+#back_button_1:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+
+/*********** SELECT DATE AND TIME ************/
+
+#continue_button_2 {
+    margin: 270px 70px 50px 0px;
+    padding: 10px 15px 10px 15px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color:#454444;
+    font-size: 14px;
+}
+
+#back_button_2 {
+    margin: 270px 70px 50px 0px;
+    padding: 10px 15px 10px 15px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color:#454444;
+    font-size: 14px;
+}
+
+#continue_button_2:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+#back_button_2:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+/*********** LAB RESULTS (TABLE) ************/
+
+.table-background {
+    border: 10px;
+    background: #F6F5F5;
+    background-clip: padding-box;
+    margin: 15px 75px auto 75px;
+    padding: 0px 50px 50px 50px;
+    border-radius: 20px;
+}
+
+/* .tableFixHead          { overflow: auto; height: 100px; }
+.tableFixHead thead th { position: absolute; top: 0; z-index: 1; } */
+
+table.lab_result  { 
+    border-collapse: collapse; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%; 
+    margin: 0px auto auto auto;
+}
+
+table.lab_result th, table.lab_result td { 
+    padding: 8px 16px;
+    line-height: 55px;
+    background:#F6F5F5;
+    color: #585757;
+    font-size: 15px;
+    text-align: left;
+}
+
+table.lab_result tr  {
+    border-bottom: 1px solid #585757;
+}
+
+.back_button_4 {
+    padding: 10px 15px 10px 15px;
+    margin: auto 75px auto 1300px;
+    font-size: 13px;
+    top: 140px;
+    background-color: #F6F5F5;
+    border-radius: 25px;
+    display: inline-block;
+    position: absolute;
+}
+
+.back_button_4:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+
+/*********** DROPDOWN MENU ************/
+
+.date_dropdown {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 8px 10px 14px;
+    margin-left: 70px;
+    background: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 20%
+}
+
+  
+.date_dropdown select {  /* the arrow */
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    width: 97%;
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+}
+
+
+.time_dropdown {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 8px 10px 14px;
+    margin-top: 50px;
+    margin-left: 70px;
+    background: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 20%
+}
+
+
+.time_dropdown select {  /* the arrow */
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    width: 97%;
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+}
+  
+
+/*********** CONFIRM APPOINTMENT ************/
+
+table.confirm {
+    background: transparent;
+    width: 40%;
+}
+
+table.confirm {
+    width: 40%; 
+    margin: 0px auto auto 50px;
+    padding: 0px 60px 0px 10px;
+}
+
+table.confirm th, table.confirm td { 
+    padding: 8px 10px; 
+    line-height: 32px;
+    font-size: 16px;
+    color: #F6F5F5;
+    text-align: left;
+}
+
+.map_image {
+    position: absolute;
+    border-radius: 20px;
+    margin: 200px 60px auto 830px;
+    width: 37%;
+    height: auto;
+}
+
+#back_button_3 {
+    padding: 10px 15px 10px 15px;
+    margin: 180px 78px 50px 0px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color:#454444;
+    font-size: 14px;
+}
+
+#back_button_3:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+#confirm_button {
+    margin: 180px 70px 50px 0px;
+    padding: 10px 15px 10px 15px;
+    background-color: #eda333d2;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color:#F6F5F5;
+    font-size: 14px;
+}
+
+/* #cancel_button_1 {
+    padding: 10px 15px 10px 15px;
+    margin: 210px 100px 0px 60px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color:#454444;
+    font-size: 14px;
+} */
+
+#confirm_button:hover {
+    background: #de911fd2;
+    color: #F6F5F5;
+}
+
+/* #cancel_button_1:hover {
+    background: #DFDFDF;
+    color: #454444;
+} */
+
+.barcode_image {
+    position: absolute;
+    border-radius: 5px;
+    margin: 470px 820px 0px 70px;
+    width: 10%;
+    height: auto;
+}
+
+/*********** CURRENT APPOINTMENT ************/
+
+#cancel_button_2 {
+    margin: 220px 70px 50px 0px;
+    padding: 10px 15px 10px 15px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+#back_button_4 {
+    padding: 10px 15px 10px 15px;
+    margin: 50px 70px 50px 0px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color:#454444;
+    font-size: 14px;
+}
+
+#cancel_button_2:hover {
+    background: #DFDFDF;
+    color: #454444;
+}
+
+#back_button_4:hover {
+    background: #DFDFDF;
+    color: #454444;
+}

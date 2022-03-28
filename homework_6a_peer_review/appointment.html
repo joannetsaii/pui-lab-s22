@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>HealthConnect</title>
+  <meta charset="UTF-8">
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- javascript -->
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Top left logo display -->
+    <div class="top_row_left_logo">     
+        <a class="active" href="index.html">
+        <img src="assets/scotty-mask-logo.png" alt="scotty mask logo" width="65px" height="73.5px"></a>
+    </div>
+
+    <div class="top_row_left_text">     
+      <a href="index.html"><strong>HealthConnect.</strong></a>    
+    </div>
+
+    <div id="top_row">
+        <nav>
+          <a href="immunization.html">Immunizations</a>
+          <a href="medical_record.html">Medical Records</a>
+          <a href="upcoming_appt.html">Appointments</a>       
+          <a href="index.html">Home</a> 
+        </nav>
+    </div>
+  </header>
+
+  <div>
+    <h3>Select an Appointment</h3>
+    <div class="appt_options">
+        <input id="tartan_testing" type="radio" name="Selected Type" value="Tartan Testing (Asymptomatic COVID-19 Testing)">
+        <label for="tartan_testing">Tartan Testing (Asymptomatic COVID-19 Testing)</label>
+        <br>
+        <br>
+        <input id="vaccination" type="radio" name="Selected Type" value="COVID-19 Vaccination">
+        <label for="vaccination">COVID-19 Vaccination</label>
+        <br>
+        <br>
+      <div id="result"></div>
+
+    </div>
+
+    <div id="buttons">
+      <div class="button_option">
+        <button onclick="displaySelectedType(); location.href = 'schedule_appt.html';" id="continue_button_1" class="float-right submit-button">Continue</button>
+      </div>
+      <div class="button_option">
+        <button onclick="location.href = 'index.html';" id="back_button_1" class="float-right submit-button">Back</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

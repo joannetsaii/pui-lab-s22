@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>HealthConnect</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Top left logo display -->
+        <div class="top_row_left_logo">     
+            <a class="active" href="index.html">
+            <img src="assets/scotty-mask-logo.png" alt="scotty mask logo" width="65px" height="73.5px"></a>
+        </div>
+    
+        <div class="top_row_left_text">     
+          <a href="index.html"><strong>HealthConnect.</strong></a>    
+        </div>
+    
+        <div id="top_row">
+            <nav>
+              <a href="immunization.html">Immunizations</a>
+              <a href="medical_record.html">Medical Records</a>
+              <a class="active" href="upcoming_appt.html">Appointments</a>       
+              <a href="index.html">Home</a> 
+            </nav>
+        </div>
+      </header>
+
+      <div>
+        <h4 class="upcoming-heading">Upcoming Appointments</h4>
+        <!-- table code starts here -->
+        <div class="table-background">
+        <table class="upcoming_appt">
+          <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Location</th>
+            <th scope="col">Details</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <!-- <td id="type_display"></td> -->
+                <td>Tartan Testing (Asymptomatic COVID-19 Testing)</td>
+                <!-- <td id="date_display"></td> -->
+                <td>February 7th, Monday</td>
+                <!-- <td id="time_display"></td> -->
+                <td>8:00AM - 8:05AM</td>
+                <td>TCS Hall (Tartan Consultancy Service)</td>
+                <td><a href="curr_appt.html">view details</a></td>
+            </tr>
+            <!-- <tr>
+                <td id="type_display"></td>
+                <td id="date_display"></td>
+                <td id="time_display"></td>
+                <td>TCS Hall (Tartan Consultancy Service)</td>
+                <td><a href="details.html">view details</a></td>
+            </tr> -->
+          </tbody>
+          </table>
+        </div>
+      </div>
+
+      
+
+</body>
+
+</html>

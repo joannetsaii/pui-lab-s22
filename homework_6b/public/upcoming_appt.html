@@ -17,7 +17,7 @@
         <!-- Top left logo display -->
         <div class="top_row_left_logo">     
             <a class="active" href="index.html">
-            <img src="assets/scotty-mask-logo.png" alt="scotty mask logo" width="65px" height="73.5px"></a>
+            <img src="assets/scotty-mask-logo.png" alt="scotty mask logo"></a>
         </div>
     
         <div class="top_row_left_text">     
@@ -48,6 +48,7 @@
             <th scope="col">Time</th>
             <th scope="col">Location</th>
             <th scope="col">Change</th>
+            <th scope="col"></th>
           </tr>
           </thead>
           <tbody>
@@ -58,8 +59,8 @@
                 <td id="upcoming_time_1"></td>
                 <td id="upcoming_location_1"></td>
                 <!-- pass in button id to see which appointment to remove -->
-                <td><button type="button" id="cancel_btn_1" onclick="CancelAlert(); cancel_appt(1); toggle_btn(); window.location.reload();">Cancel</button></td>  
-                <td><button type="button" id="add_appt_btn_1" onclick="location.href = 'appointment.html';">Add</button></td>  
+                <td><button type="button" id="cancel_btn_1" onclick="CancelAlert(); cancel_appt(1); toggle_btn(); window.location.reload();">Cancel</button></td>
+                <td><button type="button" id="add_appt_btn_1" onclick="location.href = 'appointment.html';">Add</button></td>
             </tr>
             <tr>
               <td id="upcoming_type_2"></td>

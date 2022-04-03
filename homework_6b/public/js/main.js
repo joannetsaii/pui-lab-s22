@@ -1,15 +1,12 @@
 // store selected appointment type in session
 function displaySelectedType() {
     var userType = [];
-    // document.getElementById("result").innerHTML = "";
-    var ele = document.getElementsByTagName('input');
+    var e = document.getElementsByTagName('input');
       
-    for(i = 0; i < ele.length; i++) {
-        if(ele[i].type="radio") {
-            if(ele[i].checked) {
-                // document.getElementById("result").innerHTML
-                //         += ele[i].name + ": " + ele[i].value + "<br>";
-            userType = ele[i].value;
+    for(i = 0; i < e.length; i++) {
+        if(e[i].type="radio") {
+            if(e[i].checked) {
+            userType = e[i].value;
             sessionStorage.setItem("selected_type", userType);
             console.log(userType);
             }
@@ -67,7 +64,7 @@ function load_new_appt() {
 // raise an alert when appointment is confirmed or invalid
 function ConfirmAlert() {
     appt_data = JSON.parse(sessionStorage.getItem("appt_data"));
-    if (appt_data != null && appt_data.length <= 3) {
+    if (appt_data == null || appt_data.length < 3) {
         alert("Appointment Confirmed!");
     }
     else {
@@ -75,7 +72,8 @@ function ConfirmAlert() {
     }
 }
 
-// raise an alert when appointment is confirmed
+
+// raise an alert when appointment is canceled
 function CancelAlert() {
     alert("Appointment Canceled.");
 }
@@ -149,7 +147,6 @@ function load_upcoming_appts() {
     }
     console.log(appt_data);
 }
-
 
 
 // cancel an appointment (remove from array)

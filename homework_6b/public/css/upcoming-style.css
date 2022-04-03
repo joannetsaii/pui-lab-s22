@@ -1,0 +1,36 @@
+#add_apt_btn_1 {
+    padding: 8px 12px 8px 12px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    font-size: 12px;
+    display: block;
+}
+
+#add_appt_btn_2 {
+    padding: 8px 12px 8px 12px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    font-size: 12px;
+    display: block;
+}
+
+#add_appt_btn_3 {
+    padding: 8px 12px 8px 12px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    font-size: 12px;
+    display: block;
+}
+
+#add_appt_btn_1:hover, #add_apt_btn_2:hover, #add_apt_btn_3:hover {
+    background: #d8d8d8;
+}

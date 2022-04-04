@@ -1,0 +1,48 @@
+body > * {
+    font-family: "Open Sans";
+    max-width: 860px;
+    margin: auto;
+}
+  
+header {
+    font-family: "Merriweather", serif;
+    font-size: 1.5em;
+    margin: 2em auto;
+}
+  
+#notice {
+    color: rgb(35, 78, 82);
+    background-color: rgb(230, 255, 250);
+    border: 1px solid rgb(56, 178, 172);
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    margin-bottom: 2rem;
+}
+  
+  /* TODO: Add styles here to gradually fade out the notice */
+  /* HINT: You'll need to use the opacity property */
+#notice.dismissed {
+    opacity: 0;
+    transition: opacity 1s;
+}
+  
+#case-date-update {
+    flex-grow: 1;
+}
+
+#dismiss-notice {
+    width: 25px;
+    height: 25px;
+    fill: rgb(56, 178, 172);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#dismiss-notice:hover {
+    background-color: rgb(56, 178, 172);
+    fill: #fff;
+    /* TODO: transition between regular and hover state */
+    transition: all 0.5s;
+}

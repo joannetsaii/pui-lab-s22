@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--jQuery must also be linked for Bootstrap to function-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+  <!--This is the container for the grid in Bootstrap-->
+  <div class="container-fluid">
+    <h1>Hello World!</h1>
+    <p>Resize the browser window to see the effect.</p>
+    <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+
+    <!--Here is a single row with a 4/8 column split in Bootstrap-->
+    <div class="row">
+      <div class="col" style="background-color:lavender;">.col</div>
+      <!-- Add contact form inside this DIV-->
+      <!-- https://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
+      <!-- https://getbootstrap.com/docs/5.1/forms/overview/ -->
+        <div class="col-6" style="background-color:lavenderblush;">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="mb-3">
+              <label for="body" class="form-label">Body</label>
+              <textarea type="text" class="form-control" id="body"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="col" style="background-color:whitesmoke;">.col</div>
+    </div>
+    <!-- Add a new row  -->
+    <div class="row">
+      <div class="col-3" style="background-color:lavender;">.col-3</div>
+        <div class="col-3" style="background-color:lavenderblush;">.col-3</div>
+        <div class="col-6" style="background-color:whitesmoke;">.col-6</div>
+    </div>
+  </div> <!-- Closing container-fluid  -->
+
+  <br>
+  <!-- Add modal for this  -->
+  <!-- https://www.w3schools.com/bootstrap/bootstrap_modal.asp -->
+  <button type="button" class="btn btn-primary btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</button>
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- Modal title -->
+        <h4 class="modal-title" id="exampleModalLabel">Message</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Thanks for contacting us!</p> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -7,6 +7,22 @@
 /* font-family: 'Inter', sans-serif; */
 /* font-family: 'Inconsolata', monospace; */
 
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 /* Navigation Bar */
 .navbar {
     opacity: 0.9;
@@ -165,7 +181,8 @@
 }
 
 .about-area .about-descrip {
-    margin: 0 35% 0 0;
+    margin: -1% 35% 0 0;
+    font-size: 17px;
 }
 
 
@@ -184,7 +201,7 @@
     padding: 18px 35px 18px 35px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 6%;
 }
 
@@ -192,7 +209,7 @@
 .getInTouch-descrip {
     color: #FFF;
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     margin-top: -2%;
     margin-bottom: 23px;
@@ -333,74 +350,9 @@
 }
 
 
-
-/************************** 1. Web Development Area ***************************/
-
-/* Dark grey background of web dev project
-.site-experience .webdev-area {
-    padding: 6rem 2rem;
-    background-color: #393939;
-    opacity: 0.9;
-}
-
-/* Web dev title */
-/* .site-experience .webdev-area .webdev-title {
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-}
-
-.site-experience .webdev-area .webdev-text {
-    color: #FFF;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 400;
-    font-size: 18px;
-} */
-
-/* images of projects */
-/* .project img {
-    margin-top: 45px;
-    max-width: 90%;
-    max-height: 20%;
-    margin-left: -15px;
-}
-
-.site-experience > .webdev-area .experience {
-    background: #EFF1FD;
-    padding: 2rem 0;
-    width: 18rem;
-    margin: 5rem .5rem;
-    margin-left: 14%;
-    margin-top: -65px;
-    border-radius: 1%;
-    transition: box-shadow .7s ease;
-} */
-
-/* Three titles in each box */
-/* .site-experience > .webdev-area .experience h5 { 
-    margin-bottom: 25px;
-    margin-top: 8px;
-    font-family: 'Inter', sans-serif; 
-} */
-
-
-/* Text in boxes 
-.site-experience > .webdev-area .experience p {  
-    margin-bottom: 10px;
-    font-family: 'Inter', sans-serif; 
-    color: var(--primary-black);
-}
-
-.site-experience > .webdev-area .experience:hover{
-    box-shadow: var(--box-shadow);
-} */
-
-/* background of web dev project */
-.site-experience .webdev-area {
-    padding: 6rem 2rem;
-    background-color: #393939;
-    opacity: 0.9;
-}
+/******************************************************************************/
+/************************** General Project Area ******************************/
+/******************************************************************************/
 
 .grid { /* distance between grid and the page borders */
     margin-right: 10.5%;
@@ -412,11 +364,24 @@
     margin: 15px;
 }
 
+/******************************************************************************/
+/************************** 1. Web Dev Area ***********************************/
+/******************************************************************************/
+
+/* background of web dev project */
+.site-experience .webdev-area {
+    padding: 6rem 2rem;
+    background-color: #393939;
+    opacity: 0.9;
+}
+
 /* Data Science & Engineering title */
 .site-experience .webdev-area .webdev-title {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    font-size: 33px;
+    margin-top: 2%;
 }
 
 .site-experience .webdev-area .grid .the-project > .title h4 {
@@ -431,10 +396,6 @@
     font-family: 'Inter', sans-serif;
     color: #FFF;
 }
-/* .site-experience .data-area .grid .the-project .img {
-    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
-} */
-
 
 /* make the image brighter when hovering */
 .site-experience .webdev-area .grid .the-project .img a:hover img {
@@ -449,10 +410,9 @@
     /* filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf); */
 }
 
-
-
-
-/*********************** Show Text when Hovering Image ************************/
+/*******************************************/
+/***** Show Text when Hovering Image *******/
+/*******************************************/
 
 /* Parent Container */
 .site-experience .webdev-area .grid .the-project .img{
@@ -491,7 +451,6 @@
     
 }
 
-
 .site-experience .webdev-area .grid .the-project .img .project-description{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -512,131 +471,159 @@
     opacity: 0.9;
 }
 
-.grid { /* distance between grid and the page borders */
-    margin-right: 10.5%;
-    margin-left: 10.5%;
-}
-
-/* distance between images of projects */
-.the-project {
-    margin: 15px;
-}
-
 /* Data Science & Engineering title */
 .site-experience .data-area .data-title {
     color: var(--primary-black);
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    font-size: 33px;
+    margin-top: 2%;
 }
 
 .site-experience .data-area .grid .the-project > .title h4 {
     font-family: 'Inconsolata', monospace;
-    font-weight:300;
-    font-size: 20px;
+    font-weight:400;
+    font-size: 18px;
     color: #333;
 }
 
-/* .site-experience .data-area .grid .the-project .img {
-    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
-} */
-
 /* make the image brighter when hovering */
 .site-experience .data-area .grid .the-project .img a:hover img {
-    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    box-shadow: 0 0 0 300px rgba(0,0,0,0.9) inset;
 }
 
+/*******************************************/
+/***** Show Text when Hovering Image *******/
+/*******************************************/
 
+/* Parent Container */
+.site-experience .data-area .grid .the-project .img{
+    position: relative;
+}
 
-  
-  /* .overlayimg image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
+/* Child Text Container */
+.site-experience .data-area .grid .the-project .img div{
     position: absolute;
-    top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: var(--primary-blue);
-  }
-  
-  .container:hover .overlay {
-    opacity: 0.8;
-  }
-  
-  .text {
+    background: black;
     color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    /* margin-bottom: 5px; */
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Hover on Parent Container */
+.site-experience .data-area .grid .the-project .img:hover{
+    cursor: pointer;
+}    
+
+.site-experience .data-area .grid .the-project .img:hover div{
+    width: 100%;
+    height:100%;
+    visibility: visible;
+    opacity: 0.9;        
+    -webkit-transition: border-radius 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+    -webkit-transition: padding 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+    
+}
+
+.site-experience .data-area .grid .the-project .img .project-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 33% 20px 35% 20px;
     text-align: center;
-  } */
+}
 
 
-/********** Text on Image show when Hover ***********/
-/* .text-on-image {
+/******************************************************************************/
+/************************** 3. Software Engineering Area **********************/
+/******************************************************************************/
+
+/* background of web dev project */
+.site-experience .cs-area {
+    padding: 6rem 2rem;
+    background-color: #708294;
+    opacity: 0.8;
+}
+
+/* Data Science & Engineering title */
+.site-experience .cs-area .cs-title {
+    color: var(--primary-black);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 33px;
+    margin-top: 2%;
+    color: #FFF;
+}
+
+.site-experience .cs-area .grid .the-project > .title h4 {
+    font-family: 'Inconsolata', monospace;
+    font-weight:400;
+    font-size: 18px;
+    color: #FFF;
+}
+
+/* make the image brighter when hovering */
+.site-experience .cs-area .grid .the-project .img a:hover img {
+    box-shadow: 0 0 0 300px rgba(0,0,0,0.9) inset;
+}
+
+/*******************************************/
+/***** Show Text when Hovering Image *******/
+/*******************************************/
+
+/* Parent Container */
+.site-experience .cs-area .grid .the-project .img{
     position: relative;
 }
 
-.text {
-    position: absolute;   
-    bottom: 0;
-    left: 0;
-    height: 50%;
-    display: none;
-    color: white;
-    -webkit-transition: visibility 0s, opacity 0.5s linear;  
-    transition: visibility 0s, opacity 0.5s linear;
-    text-align: center;
-}
-
-.text-active{
-    position: absolute;   
-    bottom: 0;
-    text-align: center;
-    display: block;
-    background: white;
-    width: 100%;
-    height: 50%;
-    -webkit-transition: visibility 0s, opacity 0.5s linear;  
-    transition: visibility 0s, opacity 0.5s linear;
-}
-
-.text-on-image:hover .text {
-    display: block;
-    background: var(--primary-blue);
-    opacity: 0.8;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: visibility 0s, opacity 0.5s linear;  
-    transition: visibility 0s, opacity 0.5s linear;
-} 
-
-.site-experience .webdev-area .grid .the-project .text-on-image {
-    transition: 0.5s;
-    position: relative;
-}
-
-.site-experience .webdev-area .grid .the-project .text-on-image p {
-    opacity: 0;
-    transform: scale(0);
-    transition: 0.8s;
-    font-size: 2rem;
-    color: white;
+/* Child Text Container */
+.site-experience .cs-area .grid .the-project .img div{
     position: absolute;
-} */
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    /* margin-bottom: 5px; */
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    /* -webkit-transition: visibility 0s, opacity 0.5s linear;  
+    transition: visibility 0s, opacity 0.5s ease-out; */
+}
 
+/* Hover on Parent Container */
+.site-experience .cs-area .grid .the-project .img:hover{
+    cursor: pointer;
+}    
+
+.site-experience .cs-area .grid .the-project .img:hover div{
+    width: 100%;
+    height:100%;
+    visibility: visible;
+    opacity: 0.9;        
+    -webkit-transition: border-radius 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+    -webkit-transition: padding 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+    
+}
+
+.site-experience .cs-area .grid .the-project .img .project-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 33% 20px 35% 20px;
+    text-align: center;
+}
+
+
+/******************************************************************************/
+/********************************** Others ************************************/
+/******************************************************************************/
 
 /* socials icon */
 ion-icon {
@@ -654,9 +641,31 @@ ion-icon {
     color: #333;
     font-size: 35px;
     left: 50%;
-    /* margin-right: -50%; */
-    bottom: 5%;
+    margin-top: 4%;
 }
+
+/* arrow icon */
+.site-experience .webdev-area .dark-up {
+    position: relative;
+    color: #FFF;
+    font-size: 35px;
+    left: 50%;
+    margin-top: 4%;
+}
+
+/* arrow icon */
+.site-experience .cs-area .dark-up {
+    position: relative;
+    color: #FFF;
+    font-size: 35px;
+    left: 50%;
+    margin-top: 4%;
+}
+
+
+/******************************************************************************/
+/************************ Individual  Project Page ****************************/
+/******************************************************************************/
 
 .carousel {
     overflow: hidden;
@@ -666,22 +675,19 @@ ion-icon {
     /* max-width: 50%; */
     /* margin: 1em; */
     height: 530px;
+    /* margin-bottom: 12%; */
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
     margin-top: 50%;
 }
 
-
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Inter', sans-serif; */
-/* font-family: 'Inconsolata', monospace; */
-
 /* The block next to carousel */
 .project-intro {
     margin-top: 5rem;
     background-color: var(--second-blue);
     opacity: 0.8;
+    /* margin-bottom: 6.3%; */
     /* margin-bottom: 4px; */
 }
 
@@ -702,4 +708,158 @@ ion-icon {
     color: #FFF;
     font-weight: 300;
     margin-left: 5%;
+}
+
+/* Table Styling */
+table {
+	width: 100%;
+	margin: auto;
+	table-layout: auto;
+}
+
+th {
+	height: 30px;
+	font-weight: bold;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+th, td {
+	padding: 2px;
+	text-align: center;
+	color: #333333;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    padding: 8px 0;
+}
+
+.dot-project{
+    width: 250px;
+    height: 250px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    margin-left: 9rem;
+    display: inline-block;
+    opacity: 0.8;
+    position: relative;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+.project-info {
+    margin-top: 10%;
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.dot-project2 {
+    width: 250px;
+    height: 250px;
+    background-color: var(--second-blue);
+    border-radius: 50%;
+    margin-left: 9rem;
+    display: inline-block;
+    opacity: 0.8;
+    position: relative;
+}
+
+.project-secondary-descrip{
+    padding-top: 2%;
+    padding-right: 5%;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(245, 236, 252);
+    font-weight: 300;
+    margin-left: 5%;
+}
+
+/* unvisited link */
+.light-link a:link {
+    color: #FFF;
+    text-decoration:none; 
+    font-weight:300;
+  }
+  
+/* visited link */
+.light-link a:visited {
+    color: #FFF;
+    text-decoration:none; 
+    font-weight:300;
+}
+  
+/* mouse over link */
+.light-link a:hover {
+    color: #FFF;
+    text-decoration:none; 
+    font-weight:500;
+}
+  
+/* selected link */
+.light-link a:active {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:300;
+}
+
+/* unvisited link */
+.dark-link a:link {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:300;
+  }
+  
+/* visited link */
+.dark-link a:visited {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:300;
+}
+  
+/* mouse over link */
+.dark-link a:hover {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:500;
+}
+  
+/* selected link */
+.dark-link a:active {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:300;
+}
+
+/******************************************************************************/
+/***************************** Bottom Social Icons ****************************/
+/******************************************************************************/
+
+.bottom-info {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left:-2%;
+}
+
+.bottom-info-experience {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left:-2%;
+    background-color: #708294;
+    opacity: 0.8;
+    padding-bottom: 60px;
+}
+
+.bottom-info-project {
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left:-2%;
+    opacity: 0.8;
+    padding-bottom: 60px;
 }

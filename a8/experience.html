@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <!-- Bootstrap css file -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Custom css file -->
@@ -14,42 +13,42 @@
     <script src="./js/jquery.3.4.1.js"></script>
     <!-- Bootstrap js file -->
     <script src="./js/bootstrap.min.js"></script>
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
 </head>
 
 <body>
-<!-- ////////////////////////////////////////////////////////////////////////////////////////
+<!-- ///////////////////////////////////////////////////////////////////////////
                     START SECTION 1 - THE NAVBAR SECTION  
-/////////////////////////////////////////////////////////////////////////////////////////////-->
-    <header class="header_area">
-        <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <!-- fixed-top ? -->
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">joanne tsai</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">about</a></li>
-                      <li class="nav-item"><a class="nav-link active" href="#">experience</a></li>  
-                      <li class="nav-item"><a class="nav-link" href="#">resume</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
-                    </ul>
-                  </div>
+/////////////////////////////////////////////////////////////////////////////-->
+<header class="header_area">
+    <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">joanne tsai</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">about</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">experience</a></li>  
+                    <li class="nav-item"><a class="nav-link" href="documents/JoanneTsai_resume.pdf" target="_blank">resume</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">contact</a></li> -->
+                </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </nav>
+    </div>
+</header>
 
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                            START SECTION 2 - THE BOXES AREA
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- ///////////////////////////////////////////////////////////////////////////
+                        START SECTION 2 - THE BOXES AREA
+/////////////////////////////////////////////////////////////////////////////-->
 <main class="site-experience">
     <section class="experience-area">
         <div class="container">
-            
             <div class="row">
                 <div class="col-lg-5 col-md-12 experience-intro">
                     <div class="semi-circle-1"><h1 class="experience-text">Experience</h1></div>
@@ -92,18 +91,16 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                   
+                    </div>     
                 </div>
             </div>
         </div>
     </section>
 
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                            START SECTION 3 - THE WORKS TITLE AREA  
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
+<!-- ///////////////////////////////////////////////////////////////////////////
+                        START SECTION 3 - THE WORKS AREA  
+/////////////////////////////////////////////////////////////////////////////-->
     <section class="project-area" id ="project-area">
         <div class="container">
             <div class="row">
@@ -117,7 +114,7 @@
                             <!-- <button type="button" data-filter=".latest">Latest</button> -->
                             <a href="#webDevArea"><button type="button" data-filter=".webDesign" href="#webDevArea">Web Design & Development</button></a>
                             <a href="#dataArea"><button type="button" data-filter=".dataScience">Data Science & Engineering</button></a>
-                            <button type="button" data-filter=".CS">Computer Programming</button>
+                            <a href="#csArea"><button type="button" data-filter=".CS">Computer Programming</button></a>
                         </div>
                     </div>
                 </div>
@@ -145,44 +142,41 @@
                         </div>
                         <div class="title py-4">
                             <h4>Pamela's Diner</h4>
-                            <span class="text-secondary">2022</span>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item webdev">
                     <div class="the-project">
                         <div class="img">
-                            <a class="test-popup-link" href="experience.html">
+                            <a class="test-popup-link" href="webProject1.html">
                                 <img src="assets/tmp2.jpg" alt="webdevproject-2" class="img-fluid"> 
                                 <div class="project-description">A simplified health portal redesigned and built from scratch for CMU's HealthConnect.</div>
                             </a>
                         </div>
                         <div class="title py-4">
                             <h4>Heatlh Portal</h4>
-                            <span class="text-secondary">2022</span>
                         </div>
                     </div>
                 </div>
 
-
-
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item webdev">
                     <div class="the-project">
                         <div class="img">
-                            <a class="test-popup-link" href="experience.html">
+                            <a class="test-popup-link" href="webProject1.html">
                                 <img src="assets/tmp2.jpg" alt="webdevproject-3" class="img-fluid">
                                 <div class="project-description">My portfolio <3</div>
                             </a>
                         </div>
                         <div class="title py-4">
                             <h4>My Portfolio</h4>
-                            <span class="text-secondary">2022</span>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-lg-12 arrow">
+            <a href="#project-area"><ion-icon name="chevron-up-outline" class="dark-up"></ion-icon></a>
         </div>
     </section>
 
@@ -199,57 +193,116 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item data">
                     <div class="the-project">
                         <div class="img">
-                            <a class="test-popup-link" href="webdev1.html">
-                                <img src="assets/tmp2.jpg" alt="webdevproject-1" class="img-fluid">
+                            <a class="test-popup-link" href="webProject1.html">
+                                <img src="assets/tmp2.jpg" alt="dataproject-1" class="img-fluid">
+                                <div class="project-description">Re-engineering Doordash's database to develop user cases and queries.</div>
                             </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">Pamela's Diner</h4>
-                            <span class="text-secondary">Website Redisgn, 2022</span>
+                            <h4>The Database Lifecycle</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item data">
                     <div class="the-project">
                         <div class="img">
-                            <a class="test-popup-link" href="experience.html">
-                                <img src="assets/tmp1.jpg" alt="webdevproject-2" class="img-fluid">
+                            <a class="test-popup-link" href="webProject1.html">
+                                <img src="assets/tmp2.jpg" alt="dataproject-2" class="img-fluid">
+                                <div class="project-description">A web application built from model, controller, view (MVC).</div>
                             </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">Heatlh Portal</h4>
-                            <span class="text-secondary">Website Redesign, 2022</span>
+                            <h4>Great Pittsburgh Baking Outlet</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item data">
                     <div class="the-project">
                         <div class="img">
-                            <a class="test-popup-link" href="experience.html">
-                                <img src="assets/tmp3.jpg" alt="webdevproject-3" class="img-fluid">
+                            <a class="test-popup-link" href="webProject1.html">
+                                <img src="assets/tmp2.jpg" alt="dataproject-3" class="img-fluid">
+                                <div class="project-description">Coming soon...</div>
                             </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">My Portfolio</h4>
-                            <span class="text-secondary">Website Construction, 2022</span>
+                            <h4>Coming soon</h4>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
         <a href="#project-area"><ion-icon name="chevron-up-outline" class="up"></ion-icon></a>
     </section>
 
+
+<!--  ========================= 3. CS PROJECT ========================  -->
+
+    <section class="cs-area" id="csArea">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center cs-intro">
+                <h1 class="cs-title">Computer Programming</h1>
+            </div>
+        </div><br><br>
+        <div class="container">
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item cs">
+                    <div class="the-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="webProject1.html">
+                                <img src="assets/tmp2.jpg" alt="csproject-1" class="img-fluid">
+                                <div class="project-description">Coming soon...</div>
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4>Hamster Fund</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item cs">
+                    <div class="the-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="webProject1.html">
+                                <img src="assets/tmp2.jpg" alt="csaproject-2" class="img-fluid">
+                                <div class="project-description">Coming soon...</div>
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4>C0 Virtual Machine</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item cs">
+                    <div class="the-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="webProject1.html">
+                                <img src="assets/tmp2.jpg" alt="csproject-3" class="img-fluid">
+                                <div class="project-description">Coming soon...</div>
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4>Coming Soon</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#project-area"><ion-icon name="chevron-up-outline" class="dark-up"></ion-icon></a>
+    </section>
+
+    <div class="bottom-info-experience">
+        <!--  ======== Social Icons ==========  -->
+        <a href="https://www.linkedin.com/in/joanne-tsai-2061/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="mailto:chihant@andrew.cmu.edu" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+        <a href="https://github.com/joannetsaii" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        &copy; Joanne Tsai 2022<br/>
+    </div>
+
 </main>
-
-
 
 
 <!-- Icons -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
     
 </body>
 </html>

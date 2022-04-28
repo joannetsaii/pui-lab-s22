@@ -45,17 +45,17 @@ Other Highlights...
 
 
 **D. External Libraries**
-< JavaScript Library >
-i. Name: jQuery
-ii. Why I Chose it: I chose to use it since it supports the Bootstrap buttons, navigations, and other components.
-iii. How I used it: It's included in the js folders and it supports the Bootstrap functions internally.
-iv. It adds navigation and button directing functionalities to the website.
+- JavaScript Library
+(1) Name: jQuery
+(2) Why I Chose it: I chose to use it since it supports the Bootstrap buttons, navigations, and other components.
+(3) How I used it: It's included in the js folders and it supports the Bootstrap functions internally.
+(4) It adds navigation and button directing functionalities to the website.
 
-< Animation >
-i. Name: Animation in transition and mouse hovering
-ii. Why I Chose it: I chose to use it to increase interactivity of my portfolio, making it more engaging and interesting to explore. 
-iii. How I used it: I used it within css with @keyframes, -webkit-transition, transition, etc.
-iv. It adds animation and other special effects to my web pages and the transition between them.
+- Animation
+(1) Name: Animation in transition and mouse hovering
+(2) Why I Chose it: I chose to use it to increase interactivity of my portfolio, making it more engaging and interesting to explore. 
+(3) How I used it: I used it within css with @keyframes, -webkit-transition, transition, etc.
+(4) It adds animation and other special effects to my web pages and the transition between them.
 
 < Others >
 - Google Fonts API

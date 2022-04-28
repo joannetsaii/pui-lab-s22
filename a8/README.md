@@ -11,7 +11,6 @@ My final project is to build a web portfolio that can introduce myself to others
 Some key information in my website includes: my resume, works, summary of my experience and background, and contact information.
 There is no specific target audience. Anyone is welcome to visit my website! Further improvements will be made since I am planning to use it as
 a portfolio piece to include in future career-related applications.
-
 It is built to be engaging through the use of animations and interactivity (click, hover, etc)!
 
 
@@ -46,6 +45,12 @@ Other Highlights...
 
 
 **D. External Libraries**
+- Bootstrap 5
+(1) Name: Bootstrap 5
+(2) Why I chose it: I chose it since it has existing frameworks provided to use and can easily make the website responsive.
+(3) How I used it: It's included in the main, section, and div tags.
+(4) It creates **responsiveness** for the website, navigation bar, and carousel for the website.
+
 - JavaScript Library
 (1) Name: jQuery
 (2) Why I Chose it: I chose to use it since it supports the Bootstrap buttons, navigations, and other components.

@@ -57,13 +57,13 @@ Other Highlights...
 (3) How I used it: I used it within css with @keyframes, -webkit-transition, transition, etc.
 (4) It adds animation and other special effects to my web pages and the transition between them.
 
-< Others >
-- Google Fonts API
+- Others
+(1) Google Fonts API included in CSS and HTML
 
 
-**E. Iteration from HW7**
+**E. Iteration from HW7:**
 Changes such as the position of the shapes and texts, and the color scheme are applied to my final coded web portfolio. I also took out the list of courses and chose to focus on my works. Also, instead of including a separate contact page, I chose to only kept the "Get in Touch" section and socials icons. Based on the feedback received, I added more content/sections in my about page as well.
 
 
-**F. Major Challenges**
+**F. Major Challenges:**
 The major challenges I encountered were implementing the hovering effects (show text on image when hover) and learning bootstrap. Since it was my first time using Bootstrap in building a website, it took me a while learning how the commands are used and what they mean. Adding the hovering over effects was also a challenge since I was having issues with merging the code with Bootstrap as well as animations.

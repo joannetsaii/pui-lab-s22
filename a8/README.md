@@ -6,7 +6,7 @@ Welcome to my portfolio! This is Joanne Tsai.
 - Video: https://drive.google.com/file/d/15DYH-FDo8727jfxSESK3EkodPX23qpe_/view?usp=sharing
 
 
-**B. Description**
+**B. Description:**
 My final project is to build a web portfolio that can introduce myself to others, exhibit my past experiences, and showcase my works. 
 Some key information in my website includes: my resume, works, summary of my experience and background, and contact information.
 There is no specific target audience. Anyone is welcome to visit my website! Further improvements will be made since I am planning to use it as
@@ -16,6 +16,7 @@ It is built to be engaging through the use of animations and interactivity (clic
 
 
 **C. Using my Webstie**
+
 On every page...
 - Scroll on every page all the way down to the footer, where socials icons and copyright are shown
 - Click on the navigation bar (fixed) to navigate through the website

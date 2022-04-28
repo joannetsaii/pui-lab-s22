@@ -855,11 +855,14 @@ th, td {
 }
 
 .bottom-info-project {
-    color: #333;
+    color: var(--primary-black);
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 14px;
     margin-left:-2%;
-    opacity: 0.8;
     padding-bottom: 60px;
+}
+
+.bottom-info-project ion-icon{
+    color: var(--primary-black);
 }

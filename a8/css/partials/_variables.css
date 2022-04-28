@@ -1,0 +1,22 @@
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS Variables */
+
+:root {
+    --primary-black: #1A1A1A;
+    --second-black: #393939;
+    --primary-blue: #4957D4;
+    --second-blue: #5F6BD0;
+    --button: #5F6BD0;
+    --button-hover: #505ab3;
+    --pink: #F6C6BC;
+    --yellow: #FED97A;
+    --bg-gray: #595958;
+    --border: #AAB3FF;
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}

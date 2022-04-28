@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>HealthConnect</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+</head>
+
+<body onload="load_upcoming_appts(); general_load(); toggle_btn();">
+    <header>
+        <!-- Top left logo display -->
+        <div class="top_row_left_logo">     
+            <a class="active" href="index.html">
+            <img src="assets/scotty-mask-logo.png" alt="scotty mask logo"></a>
+        </div>
+    
+        <div class="top_row_left_text">     
+          <a href="index.html"><strong>HealthConnect.</strong></a>    
+        </div>
+    
+        <div id="top_row">
+            <nav>
+              <a href="index.html">Immunizations</a>
+              <a href="index.html">Medical Records</a>
+                
+              <a class="active" href="upcoming_appt.html">Appointments<p id="cart_length"></p></a>   
+              <a href="index.html">Home</a> 
+            </nav>
+        </div>
+      </header>
+
+      <div>
+        <h4>Upcoming Appointments</h4>
+        <p class="instructions">You can only make up to <strong>three</strong> appointments at a time.</p>
+        <!-- table code starts here -->
+        <div class="table-background">
+        <table class="upcoming_appt">
+          <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Location</th>
+            <th scope="col">Change</th>
+            <th scope="col"></th>
+          </tr>
+          </thead>
+          <tbody>
+            <!-- A person can make only up to 3 appointments at a time. -->
+            <tr>
+                <td id="upcoming_type_1"></td>
+                <td id="upcoming_date_1"></td>
+                <td id="upcoming_time_1"></td>
+                <td id="upcoming_location_1"></td>
+                <!-- pass in button id to see which appointment to remove -->
+                <td><button type="button" id="cancel_btn_1" onclick="CancelAlert(); cancel_appt(1); toggle_btn(); window.location.reload();">Cancel</button></td>
+                <td><button type="button" id="add_appt_btn_1" onclick="location.href = 'appointment.html';">Add</button></td>
+            </tr>
+            <tr>
+              <td id="upcoming_type_2"></td>
+              <td id="upcoming_date_2"></td>
+              <td id="upcoming_time_2"></td>
+              <td id="upcoming_location_2"></td>
+              <td><button type="button" id="cancel_btn_2" onclick="CancelAlert(); cancel_appt(2); toggle_btn(); window.location.reload();">Cancel</button></td>
+              <td><button type="button" id="add_appt_btn_2" onclick="location.href = 'appointment.html';">Add</button></td>   
+            </tr>
+            <tr>
+              <td id="upcoming_type_3"></td>
+              <td id="upcoming_date_3"></td>
+              <td id="upcoming_time_3"></td>
+              <td id="upcoming_location_3"></td>
+              <td><button type="button" id="cancel_btn_3" onclick="CancelAlert(); cancel_appt(3); toggle_btn(); window.location.reload();">Cancel</button></td> 
+              <td><button type="button" id="add_appt_btn_3" onclick="location.href = 'appointment.html';">Add</button></td>  
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+
+      
+
+</body>
+
+</html>

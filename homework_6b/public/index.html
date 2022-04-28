@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>HealthConnect</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+</head>
+
+<body onload="general_load();">
+  <header>
+    <!-- Top left logo display -->
+    <div class="top_row_left_logo">     
+        <a class="active" href="index.html">
+        <img src="assets/scotty-mask-logo.png" alt="scotty mask logo"></a>
+    </div>
+
+    <div class="top_row_left_text">     
+      <a href="index.html"><strong>HealthConnect.</strong></a>    
+    </div>
+
+    <div id="top_row">
+        <nav>
+          <a href="index.html">Immunizations</a>
+          <a href="index.html">Medical Records</a>
+          <a href="upcoming_appt.html">Appointments<p id="cart_length"></p></a>        
+          <a class="active" href="index.html">Home</a> 
+        </nav>
+    </div>
+    <h4 class="homepage-heading">Welcome to <strong>HealthConnect</strong>, University Health Services' secure portal.</h4>
+  </header>
+
+
+  <!-- page content -->
+  <div class="content">
+    <!-- eye care products -->
+    <div>
+      <div class="button_row">
+        <div class="button_col">
+          <a href="appointment.html" title="appointment">
+          <img alt="appointment photo" src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=962&q=80"/></a><br><br>
+          <button type="button" class="home_btns" onclick="location.href = 'appointment.html';">Schedule Appointment</button>
+        </div>
+
+        <div class="button_col">
+          <a href="vac_record.html" title="vaccine records">
+          <img alt="vaccination record photo" src="https://images.unsplash.com/photo-1518976024611-28bf4b48222e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80"/></a><br><br>
+          <button type="button" class="home_btns" onclick="location.href = 'index.html';">Enter Vaccination</button>
+        </div>
+
+        <div class="button_col">
+          <a href="lab_result.html" title="lab results">
+          <img alt="lab results photo" src="https://images.unsplash.com/photo-1507831228884-93d43e81a99d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80"/></a><br><br>
+          <button type="button" class="home_btns" onclick="location.href = 'lab_result.html';">View Lab Results</button>
+        </div>
+      </div> <!-- close button_row -->
+    </div> 
+  </div> <!-- close content -->
+
+  <br><br><br><br>
+
+  <footer>
+    &copy; HealthConnect<br/>
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,563 @@
+header {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #454444;
+}
+
+.top_row_left_logo img {
+    width: 65px;
+    height: 73.5px;
+}
+
+footer {
+    clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+    text-align: center;
+    font-size: 14px;
+    color: rgb(237, 237, 237);
+    background-color:rgb(126, 126, 126);
+    border-top: 1px dotted #cccccc;
+    padding: 11px;
+    padding-bottom: 1%;
+    font-variant: small-caps;
+}
+
+
+/*********** TOP NAVIGATION BAR ************/
+
+.top_row_left_logo a { /* Scotty Logo */
+    float: left;
+    background-color: rgb(242, 236, 236);
+    padding: 17px 10px 6px 18px;
+    text-decoration: none;
+}
+
+.top_row_left_text a { /* Health Connect */
+    float: left;
+    background-color: rgb(242, 236, 236);
+    padding: 38.5px 16px 35px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* remove the hyper link text decoration */
+.top_row_left_text a:link { text-decoration: none; }
+.top_row_left_text a:visited { 
+    text-decoration: none; 
+    color: #333;
+}
+
+#top_row nav {
+    overflow: hidden;
+    background-color: rgb(242, 236, 236);
+}
+
+#top_row nav a {
+	float: right;
+    color: #333;
+    text-align: center;
+    padding: 41px 25px 41px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: rgb(242, 236, 236);
+    margin-right: 20px;
+}
+
+#top_row nav a:hover {
+    background-color: #F6F5F5;
+    color: #383737;
+    font-weight: bold;
+}
+  
+#top_row nav a.active {
+    font-weight: bold;
+}
+
+.toprow_left a {
+    float: left;
+    color: #F6F5F5;
+    text-align: left;
+    margin-right: 200px;
+    padding-left: 25px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+h4.homepage-heading {
+    position: relative;
+    font-size: 26px;
+    color: white;
+    margin: 100px auto 28px auto;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* appointment count */
+#cart_length {
+    color: #FFF;
+    font-size: 14px;
+    float: right;
+    margin: -12px auto -5px 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 2.5px 2.5px 2.5px 2.5px;
+    border: 2px solid #FFF;
+    text-align: center;
+    background-color: #bf1533;
+}
+
+
+
+/*********** IMG COLUMN ************/
+
+.content {
+    margin-top: 100px;
+    margin-left: 170px;
+}
+
+.button_col {
+    flex: 50%;
+    padding: 10px;
+    max-width: 70%;
+}
+  
+.button_col img {
+    width: 65%;
+    height: 65%;
+    border-radius: 15px;
+}
+  
+.button_row {
+    display: flex;
+}
+  
+.button_row a {
+    color: black;
+    text-decoration: none;
+}
+
+.home_btns {
+    text-align: center;
+    font-size: 14px;
+    margin-left: 32px;
+    width: 50%;
+    padding: 15px 0px 15px 0px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 28px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* remove the hyper link text decoration */
+.home_btns a:link { 
+    text-decoration: none; 
+    color: #FFF;
+}
+
+.home_btns a:visited { 
+    text-decoration: none; 
+    color: #FFF;
+}
+
+.home_btns:hover {
+    background-color: #686868;
+}
+
+
+
+
+/*********** BUTTONS ************/
+
+.continue_btn {
+    float: right;
+    margin: 200px 100px 60px auto;
+    padding: 10px 15px 10px 15px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color:#454444;
+    font-size: 14px;
+}
+
+.back_btn {
+    margin: 200px 80px 60px auto;
+    padding: 10px 15px 10px 15px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color:#FFF;
+    font-size: 14px;
+}
+
+.continue_btn:hover {
+    background: #d8d8d8;
+}
+
+.back_btn:hover {
+    background: #656565;
+}
+
+
+
+/*********** UPCOMING APPOINTMENTS ************/
+
+.table-background {
+    border: 10px;
+    background: #F6F5F5;
+    background-clip: padding-box;
+    margin: 15px 75px auto 75px;
+    padding: 0px 50px 50px 50px;
+    border-radius: 15px;
+}
+
+table.upcoming_appt  { 
+    border-collapse: collapse; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%; 
+    margin: 0px auto auto auto;
+}
+
+table.upcoming_appt th, table.upcoming_appt td { 
+    padding: 8px 16px;
+    line-height: 55px;
+    background:#F6F5F5;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+}
+
+table.upcoming_appt tr  {
+    border-bottom: 1px solid #333;
+}
+
+
+h4 {
+    position: relative;
+    font-size: 30px;
+    color: #FFF;
+    padding-left: 0;
+    margin: 80px 75px 0 75px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 350;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+/*********** SELECT APPOINTMENT TYPE ************/
+
+h3 {
+    position: relative;
+    font-size: 26px;
+    color: white;
+    padding: 20px 20px 0px 20px;
+    margin: 70px 490px 0px 50px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.appt_options { /* the two options of appointment type */
+    position: relative;
+    color: white;
+    text-align: left;
+    padding: 50px 20px 50px 20px;
+    margin: 5px auto 40px 50px;
+    font-size: 16px;
+}
+
+#buttons {
+    clear: left;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+/*********** SELECT DATE & TIME: DROPDOWN MENU ************/
+
+.date_dropdown {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 8px 10px 14px;
+    margin-left: 75px;
+    background: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 20%
+}
+
+  
+.date_dropdown select {  /* the arrow */
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    width: 97%;
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+}
+
+
+.time_dropdown {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 8px 10px 14px;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-bottom: 30px;
+    background: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 20%
+}
+
+
+.time_dropdown select {  /* the arrow */
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    width: 97%;
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+}
+
+p.instructions { 
+    position: relative;
+    font-size: 15px;
+    color: white;
+    padding: 20px;
+    margin: 0px 490px 28px 58px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+p.confirm_instructions { 
+    position: relative;
+    font-size: 15px;
+    color: white;
+    padding: 20px;
+    margin: 0px 490px 10px 58px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+/*********** CONFIRM APPOINTMENT ************/
+
+table.confirm {
+    background: transparent;
+    width: 40%;
+}
+
+table.confirm {
+    width: 40%; 
+    margin: 0px auto auto 63px;
+    padding: 0;
+}
+
+table.confirm th, table.confirm td { 
+    padding: 8px 15px; 
+    line-height: 32px;
+    font-size: 15px;
+    color: #F6F5F5;
+    text-align: left;
+}
+
+iframe {
+    float: right;
+    display: block;
+	margin: 155px 100px 0 auto;
+    width: 30%;
+    height: 10cm;
+    border-radius: 15px;
+}
+
+p.barcode-msg {
+    margin: 60px auto 0 60px;
+    font-weight: 300;
+}
+
+#galleryThumbnail1 img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 50px 50px 78px;
+}
+
+
+.confirm_btn {
+    float: right;
+    margin: -20px 100px auto 50px;
+    padding: 10px 30px 10px 30px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color:#454444;
+    font-size: 14px;
+}
+
+
+
+.confirm_btn:hover {
+    background: #d8d8d8;
+}
+
+.confirm_back_btn {
+    margin: -20px auto auto 1070px;
+    padding: 10px 15px 10px 15px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color:#FFF;
+    font-size: 14px;
+}
+
+.confirm_back_btn:hover {
+    background: #656565;
+}
+
+
+
+.barcode_image {
+    position: absolute;
+    border-radius: 5px;
+    margin: 470px 820px 0px 70px;
+    width: 10%;
+    height: auto;
+}
+
+#cancel_btn_1 {
+    padding: 8px 12px 8px 12px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    font-size: 12px;
+    display: none;
+    margin: 8px auto 8px auto;
+}
+
+#cancel_btn_2 {
+    padding: 8px 12px 8px 12px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    font-size: 12px;
+    display: none;
+    margin: 8px auto 8px auto;
+}
+
+#cancel_btn_3 {
+    padding: 8px 12px 8px 12px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    font-size: 12px;
+    display: none;
+    margin: 8px auto 8px auto;
+}
+
+#cancel_btn_1:hover, #cancel_btn_2:hover, #cancel_btn_3:hover {
+    background: #d8d8d8;
+}
+
+
+#add_appt_btn_1 {
+    padding: 8px 12px 8px 12px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    font-size: 12px;
+    display: block;
+    margin: 8px auto 8px auto;
+}
+
+#add_appt_btn_2 {
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto 8px auto;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    font-size: 12px;
+    display: block;
+}
+
+#add_appt_btn_3 {
+    padding: 8px 12px 8px 12px;
+    background-color: #F6F5F5;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    font-size: 12px;
+    display: block;
+    margin: 8px auto 8px auto;
+}
+
+#add_appt_btn_1:hover, #add_appt_btn_2:hover, #add_appt_btn_3:hover {
+    background: #d8d8d8;
+}
+
+
+/*********** LAB RESULTS ************/
+
+table.lab_result  { 
+    border-collapse: collapse; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%; 
+    margin: 0px auto auto auto;
+}
+
+table.lab_result th, table.lab_result td { 
+    padding: 8px 16px;
+    line-height: 55px;
+    background:#F6F5F5;
+    color: #333;
+    font-size: 15px;
+    text-align: left;
+}
+
+table.lab_result tr  {
+    border-bottom: 1px solid #333;
+}

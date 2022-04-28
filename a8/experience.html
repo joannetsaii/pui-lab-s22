@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery js file -->
+    <script src="./js/jquery.3.4.1.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="./js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////
+                    START SECTION 1 - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <!-- fixed-top ? -->
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">joanne tsai</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">about</a></li>
+                      <li class="nav-item"><a class="nav-link active" href="#">experience</a></li>  
+                      <li class="nav-item"><a class="nav-link" href="#">resume</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 2 - THE BOXES AREA
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<main class="site-experience">
+    <section class="experience-area">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-5 col-md-12 experience-intro">
+                    <div class="semi-circle-1"><h1 class="experience-text">Experience</h1></div>
+                </div>
+            </div>
+            <div class="container experience-intro">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="experience">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase">UI/UX Design</h5>
+                                <p class="card-text text-secondary">
+                                    Lorem ipsum dolor sit,<br>constetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore. Adip elit, 
+                                    sed do eiusmod tempor incididunt ut labore. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="experience">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase">Data Science</h5>
+                                <p class="card-text text-secondary">
+                                    Lorem ipsum dolor sit,<br>constetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore. Adip elit, 
+                                    sed do eiusmod tempor incididunt ut labore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="experience">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase">Software</h5>
+                                <p class="card-text text-secondary">
+                                    Lorem ipsum dolor sit,<br>constetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore. Adip elit, 
+                                    sed do eiusmod tempor incididunt ut labore. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 3 - THE WORKS TITLE AREA  
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <section class="project-area" id ="project-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 experience-intro">
+                    <div class="semi-circle-2"><h1 class="experience-text">Works</h1></div>
+                </div>
+                <div class="row">
+                    <div class="project-bar">
+                        <div class="col-lg-12 text-center button-group">
+                            <!-- <button type="button" class="active" id="btn1" data-filter="*">All</button> -->
+                            <!-- <button type="button" data-filter=".latest">Latest</button> -->
+                            <a href="#webDevArea"><button type="button" data-filter=".webDesign" href="#webDevArea">Web Design & Development</button></a>
+                            <a href="#dataArea"><button type="button" data-filter=".dataScience">Data Science & Engineering</button></a>
+                            <button type="button" data-filter=".CS">Computer Programming</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--  ========================= 1. WEB DEV PROJECT ========================  -->
+
+    <section class="webdev-area" id="webDevArea">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center webdev-intro">
+                <h1 class="webdev-title">Web Design & Development</h1>
+            </div>
+        </div><br><br>
+        <div class="container">
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item webdev">
+                    <div class="the-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="webProject1.html">
+                                <img src="assets/tmp2.jpg" alt="webdevproject-1" class="img-fluid">
+                                <div class="project-description">A website redesigned and built from scratch for Pamela's Diner, a well-known Pittsburgh Tradition.</div>
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4>Pamela's Diner</h4>
+                            <span class="text-secondary">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item webdev">
+                    <div class="the-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="experience.html">
+                                <img src="assets/tmp2.jpg" alt="webdevproject-2" class="img-fluid"> 
+                                <div class="project-description">A simplified health portal redesigned and built from scratch for CMU's HealthConnect.</div>
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4>Heatlh Portal</h4>
+                            <span class="text-secondary">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item webdev">
+                    <div class="the-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="experience.html">
+                                <img src="assets/tmp2.jpg" alt="webdevproject-3" class="img-fluid">
+                                <div class="project-description">My portfolio <3</div>
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4>My Portfolio</h4>
+                            <span class="text-secondary">2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--  ========================= 2. DATA PROJECT ========================  -->
+
+    <section class="data-area" id="dataArea">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center data-intro">
+                <h1 class="data-title">Data Science & Engineering</h1>
+            </div>
+        </div><br><br>
+        <div class="container">
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item data">
+                    <div class="the-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="webdev1.html">
+                                <img src="assets/tmp2.jpg" alt="webdevproject-1" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Pamela's Diner</h4>
+                            <span class="text-secondary">Website Redisgn, 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item data">
+                    <div class="the-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="experience.html">
+                                <img src="assets/tmp1.jpg" alt="webdevproject-2" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Heatlh Portal</h4>
+                            <span class="text-secondary">Website Redesign, 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item data">
+                    <div class="the-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="experience.html">
+                                <img src="assets/tmp3.jpg" alt="webdevproject-3" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">My Portfolio</h4>
+                            <span class="text-secondary">Website Construction, 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#project-area"><ion-icon name="chevron-up-outline" class="up"></ion-icon></a>
+    </section>
+
+</main>
+
+
+
+
+<!-- Icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+</body>
+</html>

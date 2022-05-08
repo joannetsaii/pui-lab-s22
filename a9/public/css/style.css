@@ -1,0 +1,1009 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Inter:wght@100;200;300;400&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+/* import css variables */
+@import  url(partials/_variables.css);
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Inconsolata', monospace; */
+
+body {
+    animation: fadeIn ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-500px);
+    }
+    60% {
+        transform: translateX(0px);
+    }
+    62% {
+        transform: translateX(20px);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-500px);
+    }
+    60% {
+        transform: translateY(0px);
+    }
+    62% {
+        transform: translateY(20px);
+    }
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+/* Navigation Bar */
+.navbar {
+    opacity: 0.9;
+}
+
+.navbar-brand {
+    padding: 1rem 1rem 0 9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    padding-right: 9rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    color: var(--primary-black);
+}
+
+.nav-item {
+    padding: 1rem 0 0 3rem;
+}
+
+.nav-link a:hover {
+    color: var(--primary-blue);
+}
+
+.site-main > .site-banner .intro {
+    background: #dfe9d6;
+    /* opacity: 0.9; */
+    padding: 2rem 0;
+    width: 88%;
+    margin: 5rem .5rem;
+    margin-left: 12%;
+    margin-top: -65px;
+    border-radius: 1%;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .site-banner .intro h5 { /* Three titles in each box */
+    margin-bottom: 25px;
+    margin-top: 8px;
+    font-family: 'Inter', sans-serif; 
+    color: #333333;
+    padding-left: 7%;
+}
+
+.site-main > .site-banner .intro p { /* Text in boxes */
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif; 
+    color: var(--primary-black);
+    font-weight: 300;
+    padding-left: 7%;
+    font-size: 16px;
+}
+
+/* Banner Area */
+.site-main .site-banner .site-intro h3 {
+    padding-top: 43%;
+    font-weight: 300;
+    margin-left: 29%;
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 12.5rem 0;
+    margin-left: 8rem;
+    width: 20rem;
+}
+
+.site-buttons .primary-button {
+    transition: transform .2s;
+    color: var(--button);
+    background-color: rgb(238, 238, 238);
+    border: 2px solid var(--button);
+    border-radius: 8px;
+    opacity: 0.8;
+    padding: 6px 18px 6px 18px;
+    margin-top: 4%;
+}
+
+.site-buttons .primary-button:hover {
+    transform: scale(1.05); 
+    background-color: rgb(246, 243, 243);
+    opacity: 0.8;
+}
+
+.about-info {
+    margin-top: 7%;
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.about-image {
+    width: 40%;
+    margin-left: 9rem;
+    margin-top: 7%;
+    margin-right: 0;
+}
+
+.site-main { /* Background */
+    background-image: linear-gradient(to bottom, #FFF, #ebecf4);
+}
+
+.dot {
+    width: 250px;
+    height: 250px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    margin-left: 9rem;
+    display: inline-block;
+    opacity: 0.8;
+    position: relative;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.dot2 {
+    width: 250px;
+    height: 250px;
+    background-color: var(--second-blue);
+    border-radius: 50%;
+    margin-left: 9rem;
+    display: inline-block;
+    opacity: 0.8;
+    position: relative;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.dot3 {
+    width: 250px;
+    height: 250px;
+    background-color: #FED97A;
+    border-radius: 50%;
+    margin-left: 9rem;
+    display: inline-block;
+    opacity: 0.9;
+    position: relative;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.semi-circle-hello {
+    margin-top: 18%;
+    width: 370px;
+    height: 330px; /* as the half of the width */
+    background-color: #c2c7ee;
+    border-radius: 50%; /* 100px of height + 10px of border */
+    border: 10px solid #c2c7ee;
+    border-bottom: 0;
+    margin-left: -220px;
+    opacity: 0.9;
+    position: relative;
+    /* animation: slideIn 3s ease-in;
+    animation-delay: 0s; */
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.site-intro h1 { /* About me title */
+    font-size: 6vw;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    margin-left: 280px;
+    animation: slideDown 3s ease-in;
+    animation-delay: 0s;
+}
+
+/* Get in Touch text */
+.about-area .getInTouch h3 {
+    margin-left: 41%;
+    margin-top: 37%;
+    margin-bottom: 0;
+    position: absolute;
+    color: var(--second-black);
+}
+
+.about-area .getInTouch h3::after{
+    content: " ";
+    height: 2px;
+    width: 9.4vw;
+    background: #595958;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-7.5px);
+}
+
+.about-area .about-intro h3 {
+    margin-left: 41%;
+    margin-top: 43%;
+    margin-bottom: 0;
+    position: absolute;
+    color: #FFF;
+}
+.about-area .about-intro h3::after{
+    content: " ";
+    height: 1.5px;
+    width: 9.4vw;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-7.5px);
+}
+
+.about-area .about-descrip {
+    margin: -1% 35% 0 0;
+    font-size: 17px;
+    transition: transform .2s;
+}
+
+/* intro links */
+.site-intro .intro .hyperlink {
+    text-decoration: underline;
+    color: #333333;
+}
+
+.site-intro .intro .hyperlink:hover {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+.site-intro .intro .hyperlink:visited {
+    text-decoration: underline;
+    color: #333333;
+}
+
+.site-intro .intro .hyperlink:links {
+    text-decoration: underline;
+    color: #333333;
+}
+
+/* about me links */
+.about-area .about-descrip .hyperlink {
+    text-decoration: underline;
+    color: #333333;
+}
+
+.about-area .about-descrip .hyperlink:hover {
+    text-decoration: none;
+    color: #333333;
+}
+
+.about-area .about-descrip .hyperlink:visited {
+    text-decoration: underline;
+    color: #333333;
+}
+
+.about-area .about-descrip .hyperlink:link {
+    text-decoration: underline;
+    color: #333333;
+}
+
+/************************** Get in Touch Area ***************************/
+.bottom-main {
+    background-color: #595958;
+}
+
+/* Contact Information Button */
+.bottom-main .about-area .getInTouch-info button {
+    background: transparent;
+    transition: transform .2s;
+    color: #FFF;
+    border: 1px solid #AAB3FF;
+    border-radius: 50px;
+    padding: 18px 35px 18px 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-right: 6%;
+}
+
+.bottom-main .about-area .getInTouch-info button:hover {
+    transform: scale(1.1); 
+    background: transparent;
+    color: #FFF;
+    border: 1px solid #AAB3FF;
+    border-radius: 50px;
+    padding: 18px 35px 18px 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-right: 6%;
+    /* font-weight:500; */
+}
+
+/* Say hi at: & Connect with me at: Text */
+.getInTouch-descrip {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: -2%;
+    margin-bottom: 23px;
+}
+
+/* Get in Touch title */
+.site-main .getInTouch-info h3 {
+    padding-top: 43%;
+    font-weight: 300;
+    margin-left: 29%;
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+/***************************** EXPERIENCE SECTION *****************************/
+
+/* Experience Top Area */ 
+.site-experience { /* Background */
+    background-color: #FFF;
+}
+
+.site-experience .experience-area {
+    padding: 7rem 2rem;
+}
+
+.site-experience .experience-area .experience-title {
+    padding: 0 14rem;
+}
+
+.site-experience .experience-area .experience-title h1 {
+    font-size: 35px;
+}
+
+.site-experience > .experience-area .experience {
+    background: #EFF1FD;
+    padding: 2rem 0;
+    width: 18rem;
+    margin: 5rem .5rem;
+    margin-left: 14%;
+    margin-top: -65px;
+    border-radius: 1%;
+    transition: box-shadow .7s ease;
+}
+
+.site-experience > .experience-area .experience h5 { /* Three titles in each box */
+    margin-bottom: 25px;
+    margin-top: 8px;
+    font-family: 'Inter', sans-serif; 
+    font-size: 20px;
+}
+
+
+.site-experience > .experience-area .experience p { /* Text in boxes */
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif; 
+    color: var(--primary-black);
+}
+
+.site-experience > .experience-area .experience:hover{
+    box-shadow: var(--box-shadow);
+}
+
+
+/* Experience Section Top */
+.semi-circle-exp {
+    width: 370px;
+    height: 330px; /* as the half of the width */
+    background-color: #F6C6BC;
+    border-radius: 50%; /* 100px of height + 10px of border */
+    border: 10px solid #F6C6BC;
+    border-bottom: 0;
+    margin-left: -220px;
+    /* display: inline-block; */
+    opacity: 0.9;
+    position: relative;
+    animation: slideIn 3s ease-in;
+    animation-delay: 0s;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.experience-intro h1 { /* Experience title */
+    font-size: 6vw;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    margin-left: 280px;
+    animation: slideDown 3s ease-in;
+    animation-delay: 0s;
+}
+
+.experience-intro a:link {
+    text-decoration:none; 
+    color: var(--second-black);
+}
+
+.experience-intro a:hover {
+    text-decoration:none; 
+    color: var(--second-black);
+}
+
+.experience-intro a:visited {
+    text-decoration:none; 
+    color: var(--second-black);
+}
+
+.experience-intro a:hover {
+    text-decoration:none; 
+    color: var(--second-black);
+}
+
+.semi-circle-2 {
+    width: 370px;
+    height: 330px; /* as the half of the width */
+    background-color: #e3e9ef;
+    border-radius: 50%; /* 100px of height + 10px of border */
+    border: 10px solid #e3e9ef;
+    border-bottom: 0;
+    margin-left: -220px;
+    /* display: inline-block; */
+    opacity: 0.9;
+    position: relative;
+    margin-bottom: 0;
+    /* animation: slideIn 3s ease-in;
+    animation-delay: 0s; */
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* whole area of works and buttons */
+.project-area {
+    margin-bottom: -50px;
+}
+
+/******* Experience Section Middle (Works) *******/
+.site-experience > .project-area .project-bar {
+    /* background: #393939;
+    opacity: 0.8; */
+    padding: 2rem 0 2rem 0;
+    margin: 5rem .5rem;
+    margin-top: -65px;
+    /* margin-bottom: 0; */
+    border-radius: 1%;
+    transition: box-shadow .7s ease;
+}
+
+.site-experience .project-area .button-group button {
+    background: transparent;
+    color: var(--primary-black);
+    border: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    text-transform: lowercase;
+    margin-top: -90px;
+    padding: 0 3% 0 3%;
+    transition: transform .2s;
+}
+
+.site-experience .project-area .button-group button:hover {
+    background: transparent;
+    color: var(--primary-black);
+    border: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    text-transform: lowercase;
+    margin-top: -90px;
+    padding: 0 3% 0 3%;
+    transform: scale(1.05);
+}
+
+.site-experience .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+
+/******************************************************************************/
+/************************** General Project Area ******************************/
+/******************************************************************************/
+
+.grid { /* distance between grid and the page borders */
+    margin-right: 10.5%;
+    margin-left: 10.5%;
+}
+
+/* distance between images of projects */
+.the-project {
+    margin: 15px;
+}
+
+
+/******************************************************************************/
+/************************** 1. Web Dev Area ***********************************/
+/******************************************************************************/
+
+/* background of web dev project */
+.site-experience .webdev-area {
+    padding: 6rem 2rem;
+    background-color: #393939;
+    opacity: 0.9;
+}
+
+/* Data Science & Engineering title */
+.site-experience .webdev-area .webdev-title {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    margin-top: 1%;
+}
+
+.site-experience .webdev-area .grid .the-project > .title h4 {
+    font-family: 'Inconsolata', monospace;
+    font-weight:300;
+    font-size: 18px;
+    color: #FFF;
+}
+
+
+/*******************************************/
+/***** Show Text when Hovering Image *******/
+/*******************************************/
+
+/* Parent Container */
+.site-experience .webdev-area .grid .the-project .img {
+    position: relative;
+}
+
+/* Child Text Container */
+.site-experience .webdev-area .grid .the-project .img div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Hover on Parent Container */
+.site-experience .webdev-area .grid .the-project .img:hover {
+    cursor: pointer;
+}    
+
+.site-experience .webdev-area .grid .the-project .img:hover div {
+    width: 100%;
+    height:100%;
+    visibility: visible;
+    opacity: 0.9;        
+    -webkit-transition: border-radius 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+    -webkit-transition: padding 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+}
+
+.site-experience .webdev-area .grid .the-project .img .project-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 33% 20px 35% 20px;
+    text-align: center;
+}
+
+
+/***************************************************************************/
+/************************** 2. Data Science Area ***************************/
+/***************************************************************************/
+
+/* background */
+.site-experience .data-area {
+    padding: 6rem 2rem;
+    background-color: #faf4f3;
+    opacity: 0.9;
+}
+
+/* title */
+.site-experience .data-area .data-title {
+    color: var(--primary-black);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    margin-top: 1%;
+    color: #333;
+}
+
+.site-experience .data-area .grid .the-project > .title h4 {
+    font-family: 'Inconsolata', monospace;
+    font-weight:400;
+    font-size: 18px;
+    color: #333;
+}
+
+
+/*******************************************/
+/***** Show Text when Hovering Image *******/
+/*******************************************/
+
+/* Parent Container */
+.site-experience .data-area .grid .the-project .img {
+    position: relative;
+}
+
+/* Child Text Container */
+.site-experience .data-area .grid .the-project .img div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Hover on Parent Container */
+.site-experience .data-area .grid .the-project .img:hover {
+    cursor: pointer;
+}    
+
+.site-experience .data-area .grid .the-project .img:hover div {
+    width: 100%;
+    height:100%;
+    visibility: visible;
+    opacity: 0.9;        
+    -webkit-transition: border-radius 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+    -webkit-transition: padding 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+}
+
+.site-experience .data-area .grid .the-project .img .project-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 33% 20px 35% 20px;
+    text-align: center;
+}
+
+
+/******************************************************************************/
+/************************** 3. Software Engineering Area **********************/
+/******************************************************************************/
+
+/* background */
+.site-experience .cs-area {
+    padding: 6rem 2rem;
+    background-color: #708294;
+    opacity: 0.9;
+}
+
+/* title */
+.site-experience .cs-area .cs-title {
+    color: var(--primary-black);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    margin-top: 1%;
+    color: #FFF;
+}
+
+.site-experience .cs-area .grid .the-project > .title h4 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFF;
+}
+
+
+/*******************************************/
+/***** Show Text when Hovering Image *******/
+/*******************************************/
+
+/* Parent Container */
+.site-experience .cs-area .grid .the-project .img {
+    position: relative;
+}
+
+/* Child Text Container */
+.site-experience .cs-area .grid .the-project .img div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Hover on Parent Container */
+.site-experience .cs-area .grid .the-project .img:hover {
+    cursor: pointer;
+}    
+
+.site-experience .cs-area .grid .the-project .img:hover div {
+    width: 100%;
+    height:100%;
+    visibility: visible;
+    opacity: 0.9;        
+    -webkit-transition: border-radius 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+    -webkit-transition: padding 2s;
+    transition: visibility 0s, opacity 0.2s linear;
+}
+
+.site-experience .cs-area .grid .the-project .img .project-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 33% 20px 35% 20px;
+    text-align: center;
+}
+
+
+/******************************************************************************/
+/************************ Individual  Project Page ****************************/
+/******************************************************************************/
+
+.carousel {
+    overflow: hidden;
+    border-radius: 2px;
+    position: relative;
+    padding-top: 5rem;
+    /* max-width: 50%; */
+    /* margin: 1em; */
+    height: 530px;
+    /* margin-bottom: 12%; */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    margin-top: 50%;
+}
+
+/* The block next to carousel */
+.project-intro {
+    margin-top: 5rem;
+    background-color: var(--second-blue);
+    opacity: 0.8;
+    /* margin-bottom: 6.3%; */
+    /* margin-bottom: 4px; */
+}
+
+.project-title {
+    margin-top: 35%;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    font-weight: 300;
+    margin-left: 5%;
+}
+
+.project-descrip {
+    padding-top: 2%;
+    padding-right: 5%;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+    font-weight: 200;
+    margin-left: 5%;
+}
+
+/* Table Styling */
+table {
+	width: 100%;
+	margin: auto;
+	table-layout: auto;
+}
+
+th {
+	height: 30px;
+	font-weight: bold;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+th, td {
+	padding: 2px;
+	text-align: center;
+	color: #333333;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    padding: 8px 0;
+}
+
+.dot-project{
+    width: 250px;
+    height: 250px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    margin-left: 9rem;
+    display: inline-block;
+    opacity: 0.8;
+    position: relative;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.project-info {
+    margin-top: 10%;
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.dot-project2 {
+    width: 250px;
+    height: 250px;
+    background-color: var(--second-blue);
+    border-radius: 50%;
+    margin-left: 9rem;
+    display: inline-block;
+    opacity: 0.8;
+    position: relative;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.project-secondary-descrip{
+    padding-top: 2%;
+    padding-right: 5%;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(245, 236, 252);
+    font-weight: 300;
+    margin-left: 5%;
+}
+
+/* unvisited link */
+.light-link a:link {
+    color: #FFF;
+    text-decoration:none; 
+    font-weight:300;
+  }
+  
+/* visited link */
+.light-link a:visited {
+    color: #FFF;
+    text-decoration:none; 
+    font-weight:300;
+}
+  
+/* mouse over link */
+.light-link a:hover {
+    color: #FFF;
+    text-decoration:none; 
+    font-weight:500;
+}
+  
+/* selected link */
+.light-link a:active {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:300;
+}
+
+/* unvisited link */
+.dark-link a:link {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:300;
+  }
+  
+/* visited link */
+.dark-link a:visited {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:300;
+}
+  
+/* mouse over link */
+.dark-link a:hover {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:500;
+}
+  
+/* selected link */
+.dark-link a:active {
+    color: var(--primary-black);
+    text-decoration:none; 
+    font-weight:300;
+}
+
+
+/******************************************************************************/
+/********************************* Arrow Icons ********************s************/
+/******************************************************************************/
+
+/* arrow icon */
+.site-experience .data-area .light-up {
+    position: relative;
+    color: #333;
+    font-size: 35px;
+    margin-top: 4%;
+}
+
+/* arrow icon */
+.site-experience .webdev-area .dark-up {
+    position: relative;
+    color: #FFF;
+    font-size: 35px;
+    margin-top: 4%;
+}
+
+/* arrow icon */
+.site-experience .cs-area .dark-up {
+    position: relative;
+    color: #FFF;
+    font-size: 35px;
+    margin-top: 4%;
+}
+
+
+/******************************************************************************/
+/******************************** Footer Area *********************************/
+/******************************************************************************/
+
+footer.footer-area {
+    padding: 1% 0;
+    background: #333333;
+}
+
+footer.footer-area .social a > ion-icon {
+    font-size: 22px;
+    padding: 1rem;
+    color: #FFF;
+    transition: transform .2s;
+}
+
+footer.footer-area .social a:hover > ion-icon {
+    color: #FFF;
+    transform: scale(1.1); 
+}
+
+.copyrights .para {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    background-color: #333333;
+    opacity: 0.8;
+    margin-bottom: 0.7%;
+}

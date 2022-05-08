@@ -2,9 +2,9 @@ Welcome to my portfolio! This is Joanne Tsai.
 
 A. Links
 
-Figma: https://www.figma.com/file/srJiMiZHnNvc6OYK9KKXTl/pui-a8-portfolio?node-id=183%3A328 (named "a8 final prototype (for grading)")
-Website: https://pui-s22-hw9.web.app
-Video: https://drive.google.com/file/d/15DYH-FDo8727jfxSESK3EkodPX23qpe_/view?usp=sharing
+- Figma: https://www.figma.com/file/srJiMiZHnNvc6OYK9KKXTl/pui-a8-portfolio?node-id=183%3A328 (named "a8 final prototype (for grading)")
+- Website: https://pui-s22-hw9.web.app
+- Video: https://drive.google.com/file/d/15DYH-FDo8727jfxSESK3EkodPX23qpe_/view?usp=sharing
 
 B. Description: My final project is to build a web portfolio that can introduce myself to others, exhibit my past experiences, and showcase my works. Some key information in my website includes: my resume, works, summary of my experience and background, and contact information. There is no specific target audience. Anyone is welcome to visit my website! Further improvements will be made since I am planning to use it as a portfolio piece to include in future career-related applications. It is built to be engaging through the use of animations and interactivity (click, hover, etc)!
 
